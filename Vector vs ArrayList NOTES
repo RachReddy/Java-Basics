@@ -1,0 +1,20 @@
+MAJOR DIFFERENCE BETWEEN VECTOR & ARRAYLIST :
+
+1.Synchronization:
+-Vector is synchronized (thread-safe).
+-ArrayList is not synchronized (not thread-safe).
+
+2.Performance:
+-Vector is slower due to synchronization.
+-ArrayList is faster as it's not synchronized.
+
+3.Growth Factor:
+-Vector doubles its size when resizing.
+-ArrayList increases its size by 50% when resizing.\
+
+4.Legacy:
+-Vector is a legacy class.
+-ArrayList is part of the Collections framework.
+
+5.Iterator Fail-Fast:
+-Both have fail-fast iterators.

@@ -1,0 +1,20 @@
+MAP INTERFACE COMPONENTS NOTES
+
+Map: The main interface representing a collection of key-value pairs. It does not allow duplicate keys.
+
+Map
+├── HashMap
+├── LinkedHashMap
+├── TreeMap
+├── Hashtable
+
+
+Explanation of components:
+
+1. HashMap: Implements the Map interface using a hash table. It does not guarantee the order of key-value pairs and allows null keys and values.
+
+2. LinkedHashMap: Extends HashMap and maintains the insertion order of key-value pairs. It uses a doubly-linked list to maintain the order.
+
+3. TreeMap: Implements the Map interface using a Red-Black tree. It orders the key-value pairs based on the natural ordering of keys or using a comparator provided at the time of creation.
+
+4. Hashtable: A legacy class that implements the Map interface using a hash table. It is synchronized and does not allow null keys or values.

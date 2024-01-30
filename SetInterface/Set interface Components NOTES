@@ -1,0 +1,16 @@
+SET INTERFACE NOTES:
+
+-Set interface => is a collection of unique elements, meaning it cannot contain duplicate elements. 
+
+Set
+├── HashSet
+├── LinkedHashSet
+└── TreeSet
+
+Explanation of components:
+
+1.HashSet: Implements the Set interface using a hash table. It does not guarantee the order of elements and allows null elements.
+
+2.LinkedHashSet: Extends HashSet and maintains the insertion order of elements. It uses a doubly-linked list to maintain the order.
+
+3.TreeSet: Implements the Set interface using a red-black tree. It orders the elements based on their natural ordering or using a comparator provided at the time of creation.

@@ -1,0 +1,25 @@
+MAJOR DIFFERENCE BETWEEN HASHMAP & LINKEDHASHMAP :
+
+1. HashMap: Does not maintain any order of elements. Elements are stored based on their hash code, so the order is not guaranteed.
+2. LinkedHashMap: Maintains the insertion order of elements. When elements are added to the map, they are stored in the order in which they were inserted.
+
+Example:
+
+// HashMap Example
+        Map<Integer, String> hashMap = new HashMap<>();
+        hashMap.put(3, "Orange");
+        hashMap.put(1, "Banana");
+        hashMap.put(2, "Apple");
+        System.out.println("HashMap: " + hashMap); // Output might not preserve insertion order
+        
+// LinkedHashMap Example
+        Map<Integer, String> linkedHashMap = new LinkedHashMap<>();
+        linkedHashMap.put(3, "Orange");
+        linkedHashMap.put(1, "Banana");
+        linkedHashMap.put(2, "Apple");
+        System.out.println("LinkedHashMap: " + linkedHashMap); // Output preserves insertion order
+    }
+
+OUTPUT:
+HashMap: {1=Banana, 2=Apple, 3=Orange} // Order might vary
+LinkedHashMap: {3=Orange, 1=Banana, 2=Apple} // Order preserved

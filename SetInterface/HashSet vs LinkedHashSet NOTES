@@ -1,0 +1,24 @@
+MAJOR DIFFERENCE BETWEEN HASHSET & LINKEDHASHSET :
+
+1.HashSet: Does not maintain any order of elements. Elements are stored based on their hash code, so the order is not guaranteed.
+2.LinkedHashSet: Maintains the insertion order of elements. When elements are added to the set, they are stored in the order in which they were inserted.
+
+Example:
+// HashSet Example
+        Set<String> hashSet = new HashSet<>();
+        hashSet.add("Banana");
+        hashSet.add("Orange");
+        hashSet.add("Apple");
+        System.out.println("HashSet: " + hashSet); // Output might not preserve insertion order
+        
+// LinkedHashSet Example
+        Set<String> linkedHashSet = new LinkedHashSet<>();
+        linkedHashSet.add("Banana");
+        linkedHashSet.add("Orange");
+        linkedHashSet.add("Apple");
+        System.out.println("LinkedHashSet: " + linkedHashSet); // Output preserves insertion order
+
+
+OUTPUT:
+HashSet: [Orange, Banana, Apple] // Order might vary
+LinkedHashSet: [Banana, Orange, Apple] // Order preserved

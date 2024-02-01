@@ -9,6 +9,8 @@
     │   │   ├── LinkedList
     │   │   └── Vector
     |   |
+    |   |__ STACK
+    |   |
     │   ├── QUEUE
     │   │   ├── PriorityQueue
     │   │   └── LinkedList

@@ -35,7 +35,10 @@ public class StackExample
         // Getting the size of the s
         int size = s.size();
         System.out.println("Size of the s: " + size); // 2
-        
+
+        boolean b= s.contains(10);
+        System.out.println(b) //true
+            
         s.clear();
         boolean isEmpty2 = s.isEmpty();
         System.out.println("Is the s empty? " + isEmpty2); // true

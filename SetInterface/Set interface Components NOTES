@@ -9,8 +9,11 @@ Set
 
 Explanation of components:
 
-1.HashSet: Implements the Set interface using a hash table. It does not guarantee the order of elements and allows null elements.
+1.HashSet: Implements the Set interface using a "hash table". It does not guarantee the order of elements and allows null elements.
+   T.C= O(1) -> For operations like search, insert, and delete 
 
-2.LinkedHashSet: Extends HashSet and maintains the insertion order of elements. It uses a doubly-linked list to maintain the order.
+2.LinkedHashSet: Extends HashSet and maintains the insertion order of elements. It uses a doubly-linked list to maintain the order. Stores the elements in the order in which they are inserted/added.
+   T.C= O(1) ->for insert and delete;     O(1) to O(n) ->for search depending on the position.
 
-3.TreeSet: Implements the Set interface using a red-black tree. It orders the elements based on their natural ordering or using a comparator provided at the time of creation.
+3.TreeSet (SortedSet): Implements the Set interface using a "red-black tree (also called,self-balancing binary search tree )". It orders and stores the elements in asecending otder.
+   T.C= O(LogN) -> For operations like search, insert, and delete 
